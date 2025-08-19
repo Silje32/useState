@@ -7,7 +7,7 @@ function App() {
   const [list, setList] = useState([]);
 
   const updateList = () => {
-    setList([...list, text]);
+    setList((prevList) => [...prevList, text]);
     setText("");
     console.log(list);
   };
